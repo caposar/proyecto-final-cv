@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+@font-face {
+    font-family: Kollektif;
+  
+    src: url("/font/kollektif/Kollektif.ttf"),
+         url("/font/kollektif/Kollektif-Bold.ttf"),
+         url("/font/kollektif/Kollektif-BoldItalic.ttf"),
+         url("/font/kollektif/Kollektif-Italic.ttf")
+}
+@font-face {
+    font-family: PT_Serif;
+  
+    src: url("/font/PT_Serif/PTSerif-Regular.ttf"),
+         url("/font/PT_Serif/PTSerif-Bold.ttf"),
+         url("/font/PT_Serif/PTSerif-BoldItalic.ttf"),
+         url("/font/PT_Serif/PTSerif-Italic.ttf")
+}
+
+@font-face {
+    font-family: Questrial;
+  
+    src: url("/font/Questrial/Questrial-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'GothamRoundedMedium';
+
+    src: url('/font/GothamRounded/GothamRounded_eot/GothamRoundedMedium_21022.eot');
+    src: url('/font/GothamRounded/GothamRounded_eot/GothamRoundedMedium_21022.eot?#iefix') format('embedded-opentype'),
+         url('/font/GothamRounded/GothamRounded_woff/GothamRoundedMedium_21022.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'GothamRounded-Book';
+
+    src: url('/font/GothamRounded/GothamRounded_eot/GothamRoundedBook_21018.eot');
+    src: url('/font/GothamRounded/GothamRounded_eot/GothamRoundedBook_21018.eot?#iefix') format('embedded-opentype'),
+         url('/font/GothamRounded/GothamRounded_woff/GothamRoundedBook_21018.woff') format('woff');
+}

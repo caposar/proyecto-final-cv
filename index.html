@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final: Curriculum Vitae</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/cv.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cv-fonts.css">
+    <link rel="stylesheet" href="css/cv-main.css">
+    <link rel="stylesheet" href="css/cv.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">    
+</head>
+<body>
+    <div id="loader" class="loader"></div>
+
+    <div class="container box-shadow">
+        <header>
+            <div class="circular--landscape">
+                <img id="fotoPerfil" src="img/pexels-photo-614810.jpeg" alt="foto de perfil">
+            </div>
+            <div class="descripcion zoom">
+                <h1>Sebastián Bennett</h1>
+                <h2>ANALISTA FINANCIERO</h2>
+                <p>
+                    Profesional financiero con experiencia en gestión contable
+                    y asesoría de estrategias financieras empresariales.<br>
+                    Soy un experto en lo que hago y busco un equipo de
+                    trabajo para continuar desarrollando mi carrera.
+                </p>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <section class="seccion-contacto">
+                    <h2 class="titulo-contacto">CONTACTO</h2>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-envelope tamaño-icono"></i> <span  id="mail" data-bs-toggle="modal" data-bs-target="#mailModal">sebabennett@sitioincreíble.com</span>
+                        </li>                        
+                        <li>
+                            <i class="fa-solid fa-phone-volume tamaño-icono"></i> <span>Cel: 3886-123456</span>                            
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-at tamaño-icono"></i> <span>@sitioincreíble</span>
+                        </li>                        
+                        <li>
+                            <i class="fa-solid fa-location-dot tamaño-icono"></i> <span id="location" data-bs-toggle="modal" data-bs-target="#exampleModal">Snopek 399-301 C, Libertador Gral San Martín, Jujuy.</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h2>FORMACIÓN ACADÉMICA</h2>
+                    <ul>
+                        <li>MBA en Administración de Empresas
+                            Institución Increíble, 2022</li>
+                        <li>Licenciatura en Economía y Finanzas
+                            Universidad Increíble, 2016</li>
+                        <li>Bachiller en Bienes y Servicios
+                            Colegio Secundario Increíble, 2011</li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h2>OTROS CONOCIMIENTOS</h2>
+                    <ul>
+                        <li>Analista Financiero Certificado.
+                            Institución Increíble, 2022.</li>
+                        <li>Seminario de Capacitación en Crypto
+                            Institución Increíble, 2022.</li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h2>IDIOMAS</h2>
+                    <ul>
+                        <li>Idioma Inglés Avanzado
+                            Nivel Oral: Bilingüe | Escrito: Avanzado.</li>
+                    </ul>
+                </section>
+            </aside>
+            <div class="contenido-derecho">
+                <h2>EXPERIENCIA LABORAL</h2>
+                <section class="seccion">
+                    <h3>Vicedirector Financiero</h3>
+                    <h4>Empresa Increíble, Marzo 2018 - presente</h4>
+                    <ul>
+                        <li>Diseño , organización y ejecución de las estrategias
+                            financieras y contables de la empresa.</li>
+                        <li>Planeamiento de presupuesto y seguimiento de cartera de
+                            inversiones nacionales y extranjeras.</li>
+                        <li>Presentación de resultados mensuales ante la mesa
+                            directiva y gerencia.</li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h3>Asesor Financiero</h3>
+                    <h4>Empresa Increíble, Abril 2020 - Julio 2021</h4>
+                    <ul>
+                        <li>Estudio de propuesta de inversiones en base a la
+                            rentabilidad y viabilidad económica.</li>
+                        <li>Gestión personalizada de clientes potenciales y en cartera.</li>
+                        <li>Verificación de procedimientos, protocolos y normas.</li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h3>Asesor Financiero</h3>
+                    <h4>Empresa Increíble, Septiembre 2019 - Mayo 2020</h4>
+                    <ul>
+                        <li>Análisis de oportunidades de negocio.</li>
+                        <li>Estudio de propuesta de inversiones.</li>
+                        <li>Gestión personalizada de clientes potenciales y en cartera.</li>
+                        <li>Verificación de procedimientos, protocolos y normas.</li>
+                    </ul>
+                </section>
+                <section class="seccion">
+                    <h3>Asesor Financiero</h3>
+                    <h4>Empresa Increíble, Marzo 2017 - Agosto 2019</h4>
+                    <ul>
+                        <li>Estudio de propuesta de inversiones en base a la
+                            rentabilidad y viabilidad económica.</li>
+                        <li>Gestión personalizada de clientes potenciales y en cartera.</li>
+                        <li>Verificación de procedimientos, protocolos y normas.</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+        
+    </div>
+
+    <!-- Modal con datos de contacto y mapa -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Domicilio</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body datos-contacto">
+                    <div id="map_canvas" class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1534.683007544367!2d-64.79239852187297!3d-23.814619468802288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941ac19d54607873%3A0x2a9a6d2f421e81b9!2sPlaza%20Central!5e0!3m2!1ses-419!2sar!4v1674165546605!5m2!1ses-419!2sar" 
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    
+                    <div class="mb-1">
+                        <div class="ubicacion">
+                            <div class="titulo">UBICACIÓN</div>
+                            <div><label class="dato-servicio" for="">Snopek 399-301 C, Libertador Gral San Martín, Jujuy.</label></div>
+                        </div>
+                        <div class="telefonos">
+                            <div class="titulo">TELÉFONOS</div>
+                            <div><label class="dato-servicio" for="">800 400 802 / +54 3886-123456</label></div>
+                        </div>
+                        
+                        <div class="horarios">
+                            <div class="titulo">HORARIO DE ATENCIÓN</div>
+                            <div><label class="dato-servicio" for="">Lunes a jueves de 9:00 a 18:30 hs.</label></div>
+                            <div><label class="dato-servicio" for="">Viernes de 9:00 a 14:00 hs.</label></div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal de envio de email -->
+    <div class="modal fade" id="mailModal" tabindex="-1" aria-labelledby="mailModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form id="form" class="needs-validation" novalidate>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="mailModalLabel">Contacto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body datos-contacto">
+                    
+                        <div class="mb-3">
+                            <label for="from_name" class="form-label">Nombre</label>
+                            <input type="text"  class="form-control" name="from_name" id="from_name" maxlength="50" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un Nombre.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>                            
+                            <textarea class="form-control" name="message" id="message" rows="3" maxlength="255" required></textarea>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un Mensaje.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email_id" class="form-label">Email</label>
+                            <input type="email"  class="form-control" name="email_id" id="email_id" maxlength="50" required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese un Email valido.
+                            </div>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" id="btnEnviar" class="btn btn-primary">
+                        <span id="spinner-btnEnviar" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        <span id="nombre-btnEnviar">Enviar</span>
+                    </button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast: Muestra mensaje del estado de envio del mail -->
+    <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <!-- <img src="..." class="rounded me-2" alt="..."> -->
+                <!-- <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#007aff"></rect></svg> -->
+                <i id="toast-icon-ok" class="fa-solid fa-circle-check fa-lg" style="color:green"></i>
+                <i id="toast-icon-nok" class="fa-sharp fa-solid fa-circle-xmark fa-lg" style="color:red"></i>
+                <strong class="me-auto ms-2">Mail</strong>
+                <!-- <small>11 mins ago</small> -->
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <span id="toast-mensaje">El mensaje se envió correctamente.</span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>    
+
+    <!-- CDN para envio de mail desde el modal -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="js/cv.js"></script>
+    
+</body>
+</html>

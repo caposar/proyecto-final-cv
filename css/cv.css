@@ -1,0 +1,295 @@
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../img/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: .8;
+}
+
+body {
+    margin: 2rem;
+    padding: 0!important;
+}
+
+.container {
+    max-width: 75rem;    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+header {
+    background-color: #536779;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 2rem 3rem;
+    flex-wrap: wrap;    
+}
+
+header .circular--landscape {
+    display: inline-block;
+    position: relative;
+    width: 16.5rem;
+    height: 16.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    border: .625rem solid white;    
+}
+  
+header .circular--landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -1.25rem;
+}
+
+.banner {
+    background-image: url("../img/vecteezy_web-development-isometric-landing-page-coding_16962384.jpg");
+    background-position: top center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size:inherit;
+    background-attachment: fixed;
+    /* opacity: .5; */
+}
+.banner:hover {    
+    background-image: url("../img/vecteezy_web-development-isometric-landing-page-coding_16962668.jpg");
+}
+
+header .descripcion {
+    width: 27.5rem;
+    color: white;
+    text-align: center;
+}
+
+header .descripcion h1 {
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    font-family: Kollektif, sans-serif;
+}
+
+h2 {
+    font-family: PT_Serif;
+    font-weight: 400;
+}
+
+header .descripcion h2 {
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: .25rem;
+    margin-bottom: 1.5rem;
+}
+header .descripcion p {
+    font-size: 1.0625rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+}
+
+/* contenido lateral */
+aside {
+    background-color: #EFEDED;    
+    flex: 2;
+    padding: 2rem 2.5rem;
+}
+
+.contenido-derecho {    
+    flex: 3;
+    padding: 2rem 2.5rem;
+    background-color: #F6F6F6;
+}
+
+aside h2, .contenido-derecho h2 {
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .125rem;
+    color: black;
+    margin-bottom: 0.93rem;
+}
+
+aside .seccion-contacto .titulo-contacto {
+    padding-left: 0.75rem;
+}
+
+aside .seccion-contacto ul {
+    list-style-type: none;
+    padding-left: .75rem;
+}
+aside .seccion-contacto ul li {
+    padding: .5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+}
+aside .seccion-contacto ul li i {    
+    min-width: 4rem;
+}
+aside .seccion-contacto ul li:hover {    
+    color: tomato;
+}
+aside .tamaño-icono {
+    font-size: 2rem;
+}
+aside .seccion-contacto ul a {
+    color: unset;
+    text-decoration: none;
+}
+aside .seccion-contacto ul li span#mail:hover,
+aside .seccion-contacto ul li span#location:hover {
+    cursor: pointer;
+}
+
+aside section.seccion ul {
+    padding-left: 1.5rem;
+}
+aside section.seccion ul li {
+    line-height: 1.5;
+}
+
+.contenido-derecho section.seccion h3 {
+    font-family: Kollektif;
+    font-weight: 400;
+    font-size: 1.17rem;
+    margin-bottom: .75rem;
+}
+.contenido-derecho section.seccion h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: .75rem;
+    margin-bottom: 1.33rem;
+}
+.contenido-derecho section.seccion ul {    
+    padding-left: 1.5rem;
+}
+.contenido-derecho section.seccion ul li {    
+    line-height: 1.5;
+}
+
+/**
+* Mobile y pequeñas tablets
+*/
+@media (max-width: 768px) {
+
+    html {
+      font-size: 12px;
+    }
+    
+    header {
+        text-align: center;
+        display: inherit;
+    }
+    header .descripcion {
+        width: inherit;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*---------------------------------------------*\ 
+                DATOS DE CONTACTO 
+\*---------------------------------------------*/
+    
+.datos-contacto .titulo {
+    font-family: 'GothamRoundedMedium';
+    color: #4D4F5C;
+    font-size: 0.75rem;
+    margin-bottom: 0.625rem;    
+}
+
+.datos-contacto .ubicacion, .datos-contacto .telefonos {
+    border-bottom: 1px solid #4D4F5C;
+    border-bottom: 1px solid rgba(77,79,92,0.5);
+}
+
+.datos-contacto .ubicacion, .datos-contacto .telefonos, .datos-contacto .horarios {   
+    padding-top: 1.5625rem;
+    padding-bottom: 1.5625rem;
+}
+
+.datos-contacto .dato-servicio {
+    color: #4D4F5C;
+    color: rgba(77,79,92,0.8);
+}
+
+.datos-contacto .horarios .dato-servicio {
+    font-size: 0.75rem;
+}
+
+.datos-contacto .google-maps {
+    position: relative;
+    padding-bottom: 75%; /* para un aspect ratio 4:3 */
+    padding-bottom: 56.25%; /* para un aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+.datos-contacto .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/**
+* Mobile y pequeñas tablets
+*/
+@media (max-width: 768px) and (orientation: portrait) {
+    
+    html {
+        font-size: 12px;
+    }
+    
+    .datos-contacto .google-maps {        
+        padding-bottom: 75%; /* para un aspect ratio 4:3 */        
+    }
+
+    body {
+        margin: 0.5rem;
+    }
+
+}
+
+/**
+* Mobile y pequeñas tablets
+*/
+@media (max-width: 768px) and (orientation: landscape) {
+    
+    html {
+        font-size: 12px;
+    }
+    
+    .datos-contacto .google-maps {        
+        padding-bottom: 75%; /* para un aspect ratio 4:3 */        
+    }
+
+    body {
+        margin: 0.5rem;
+    }
+
+}
+
+@media (max-width: 880px) and (orientation: portrait) {
+
+    header {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 851px) and (orientation: landscape) {
+
+    header {
+        justify-content: center;
+    }
+
+}
+
+#map_canvas {
+    background: transparent url(../img/Ajax-loader.gif) no-repeat center center;
+}

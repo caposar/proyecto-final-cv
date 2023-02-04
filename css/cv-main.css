@@ -1,0 +1,39 @@
+html body {
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Questrial', sans-serif;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+/* Agrega sombra a elemento */
+.box-shadow {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 30%);
+}
+
+.zoom {
+    transition: 1.025s ease;
+     -moz-transition: 1.025s ease; /* Firefox */
+     -webkit-transition: 1.025s ease; /* Chrome - Safari */
+     -o-transition: 1.025s ease; /* Opera */
+}
+.zoom:hover {
+    transform : scale(1.125);
+    -moz-transform : scale(1.125); /* Firefox */
+    -webkit-transform : scale(1.125); /* Chrome - Safari */
+    -o-transform : scale(1.125); /* Opera */
+    -ms-transform : scale(1.125); /* IE9 */
+}
+
+/**
+* Mobile y pequeñas tablets
+*/
+@media (max-width: 768px) {
+
+    html {
+      font-size: 12px;
+    }
+    
+}
